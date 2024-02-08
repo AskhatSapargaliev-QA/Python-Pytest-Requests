@@ -11,7 +11,7 @@ def test_get_trainers():
     response=requests.get(url=f'{URL}/trainers',params={'trainer_id':3656},timeout=5)
     assert response.status_code == 200
 
-def test_get_trainers():
+def test_get_trainers_name():
     """
     GET trainers trainer name
     """
